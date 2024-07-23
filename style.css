@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url(bg.webp);
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 400px;
+    height: 600px;
+    border: 1px solid #8b4513; /* Sienna */
+    background-color: #fde6b8; /* FloralWhite */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid #8b4513; /* Sienna */
+    padding: 10px;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #8b4513; /* Sienna */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #8b4513; /* Sienna */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #a0522d; /* Sienna Darker */
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background-color: #deb887; /* Burlywood */
+}
+
+.message.received {
+    align-self: flex-start;
+    background-color: #f4a460; /* SandyBrown */
+}
+
+#scare{
+    display: none;
+    width: 100dvw;
+    height: 100dvh;
+    background-image: url(scary.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+}
+
+#audio{
+    display: none;
+}
